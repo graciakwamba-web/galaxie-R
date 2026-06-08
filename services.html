@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> <link rel="stylesheet" href="galaxie.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo"><img src="img/21.png" height="46" width="76"></div>
+
+      <form class="input1">
+          <div class="input1-search">
+            <input type="search" placeholder="Recherchez...">
+          </div>
+      </form>  <!-- Bouton menu -->
+<button class="open-btn" onclick="openMenu()">
+  ☰
+</button>
+
+<!-- Overlay -->
+<div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+<!-- Sidebar -->
+<div class="sidebar" id="sidebar">
+
+  <!-- Fermer -->
+  <div class="close-btn" onclick="closeMenu()">
+    ✕
+  </div>
+
+  <!-- Logo -->
+  <h2 class="logo"><strong>©</strong>Galaxie</h2>
+
+  <!-- Recherche -->
+  <input type="text" placeholder="Recherche">
+
+  <!-- Menu -->
+  <ul>
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="services.html">Nos Sérvices</a></li>
+    <li><a href="offres.html">Offres</a></li>
+    <li><a href="apropos.html">A propos</a></li>
+    <li><a href="Actualité.html">Nos Spécialités..</a></li>
+  </ul>
+
+  <!-- Bouton -->
+  <button class="cta-btn">
+    S'abonner
+  </button>
+
+</div>
+</header>
+
+    <section class="gal1">
+        <div>
+          <h1>Galaxie'</h1>
+          <h3>Sérvices..</h3>
+        </div>
+    </section>
+            <form class="input">
+        <div class="input-search">
+          <input type="search" placeholder="Recherchez">
+        </div>
+      </form>
+
+<!--LIVRAISONS-->
+<section class="deliver">
+  <h2><a id="">Livraison</a></h2>
+  <div class="delivers">
+    <div><strong>°</strong><span>RAPIDE</span></div>
+    <div><strong>°</strong><span>CHAUD</span></div>
+    <div><strong>°</strong><span>PROTEGER</span></div>
+    <div><strong>°</strong><span>HYGIENIQUE</span></div>
+
+  </div>
+  <div class="d-btn">
+      <button>Consultez</button>
+
+  </div>
+</section>
+<!-- SERVICES TRAITEUR -->
+<section class="traiteur">
+  <h2><a id="">Sérvices Traiteur</a></h2>
+  <div class="t-stats">
+    <div><strong>6.5K+</strong><span>Clients</span></div>
+    <div><strong>2+</strong><span>Villes</span></div>
+    <div><strong>5 ans</strong><span>Experience</span></div>
+
+</section>
+
+<!-- PATISSERIE -->
+<section class="patisseries">
+  <h2><a id="">"Patisserie</a></h2>
+  <div class="patisserie">
+    <span class="p-btn"><button>Consultez</button></span>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+  <h2><a id="Contact">Contactez-nous</a></h2>
+  <form>
+    <div id="type">
+      <input type="text" placeholder="Nom" class="type"/>
+    <input type="email" placeholder="Email" class="type"/>
+    </div>
+    <textarea placeholder="Message.."></textarea>
+    <button>Envoyer</button> 
+  </form>
+  
+</section>
+
+</body>
+<script src="galaxie.js"></script>
+</html>

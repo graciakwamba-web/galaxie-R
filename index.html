@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> <link rel="stylesheet" href="galaxie.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+<header class="navbar">
+      <form class="input1">
+        <div class="input1-search">
+          <input type="search" placeholder="Recherchez...">
+        </div>
+      </form>
+      <button class="men">Menu</button>
+<!-- Bouton menu -->
+<button class="open-btn" onclick="openMenu()">
+  ☰
+</button>
+
+<!-- Overlay -->
+<div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+<!-- Sidebar -->
+<div class="sidebar" id="sidebar">
+
+  <!-- Fermer -->
+  <div class="close-btn" onclick="closeMenu()">
+    ✕
+  </div>
+
+  <!-- Logo -->
+  <h2 class="logo"><strong>©</strong>Galaxie</h2>
+
+  <!-- Recherche -->
+    <input type="text" placeholder="Recherche">
+  <!-- Menu -->
+  <ul>
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="services.html">Nos Sérvices</a></li>
+    <li><a href="offres.html">Offres</a></li>
+    <li><a href="apropos.html">A propos</a></li>
+    <li><a href="Actualité.html">Nos Spécialités..</a></li>
+  </ul>
+
+  <!-- Bouton -->
+  <button class="cta-btn">
+    S'abonner
+  </button>
+
+</div>
+</header>
+
+    <section class="gal">
+        <div class="tete">
+          <p>Restaurant</p>
+          <h1>Galaxie'</h1>
+          <h3>Bienvenus..</h3>
+        </div>
+    </section>
+      <form class="input">
+        <div class="input-search">
+          <input type="search" placeholder="Recherchez">
+        </div>
+      </form>
+
+<section class="services" style="margin-top: 10px;">
+  <h2><a id="Services">Cartes Menus</a></h2>
+
+  <!--CARD-->
+  <div class="cards">
+        <div class="card">
+          <img src="imaGe/20.avif">
+          <div class="card-content">
+            <h3>Boissons</h3>
+            <p>A votre soif</p>
+            <div class="price">Cliquez</div>
+          </div>
+        </div>
+    
+      <div class="card">
+      <img src="imaGe/24.webp">
+    <div class="card-content">
+      <h3>Plats</h3>
+      <p>Bon Appetit..</p>
+      <div class="price">Cliquez</div>
+    </div>
+    </div>
+
+      <div class="card">
+      <img src="imaGe/14.avif">
+    <div class="card-content">
+      <h3>Plats Traditionnel</h3>
+      <p>Mangeons BIO</p>
+      <div class="price">Cliquez</div>
+    </div>
+    </div>
+
+      <div class="card">
+      <img src="imaGe/38.jpeg">
+    <div class="card-content">
+      <h3>Desserts</h3>
+      <p>Pour vous..</p>
+      <div class="price">Cliquez</div>
+    </div>
+    </div>
+
+  </div>
+
+
+  <!--CARTES-->
+  <div class="cartes-title">
+    <h3><a id="Services">Cartes/<u>PreMium</u></a></h3>
+  </div>
+  <div class="cartes">
+    <a href="">
+      <div class="carte">
+      <img src="imaGe/32.jpeg">
+    <div class="carte-content">
+      <h3>Desserts</h3>
+      <p>Desserts 5 étoiles</p>
+      <div class="price">Cliquez</div>
+    </div>
+    </div>
+    </a>
+    <a href="">
+      <div class="carte">
+      <img src="imaGe/33.jpeg">
+    <div class="carte-content">
+      <h3>Plats</h3>
+      <p>Plats 5 étoiles</p>
+      <div class="price">Cliquez</div>
+    </div>
+    </div>
+
+    </a>
+  </div>
+
+</section>
+
+<!--LEURS AVIS-->
+
+<div class="eux">
+  <h3>Leurs Avis</h3>
+  <div class="avis">
+  <div class="avis1"><img src="imaGe/WhatsApp Image 2026-05-28 at 17.35.24.jpeg">
+      <div><h4>Gloire Kasongo</h4>
+        <P>Je recu ma commande chaud,<br> dans un lapse de temps...</P>
+      </div>  
+  </div>
+  <div class="avis2"><img src="imaGe/WhatsApp Image 2026-05-28 at 17.35.23.jpeg">
+      <div><h4>Hielene Kela</h4>
+        <P>Ma fete a était une reussite<br> grace à votre Sérvice Traiteur...</P>
+      </div>
+  </div>
+</div>
+</body>
+
+<footer>
+  <div class="pied">
+    <section class="contacts">
+    <div class="tel">
+      <h2>Contact</h2>
+      <p><a href="tel:+243 907856543">+243 907856543</a></p>
+    </div>
+    <div class="reseaux"><img src="imaGe/icone.fb.png" height="30" width="30p"><img src="imaGe/icone.whats.png" height="30" width="30p"><img src="imaGe/icone.youtube.png" height="30" width="30p"> </div>
+  </section>
+  <section class="adress">
+      <h3>Nos adresses :</h3>
+      <p>Av :Lomami n°198b, Q;Djonu, C/GOMBE</p>
+      <p>Av :Lomami n°201, Q;Djonu, C/LINGWALA</p>
+      <p>Av :Lomami n°110b, Q;UPN, C/NGALIEMA</p>
+      <p>Av :Lomami n°001, Q;Djonu, C/KITAMBO</p>
+  </section>
+<!--BOITE-IFRAME-->
+  <section class="boite">
+
+        <div class="iframe">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3294.649864755623!2d15.27908563613891!3d-4.327186759260312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a6a31c3e94ec6a1%3A0xe4a7c4a1ed5a3a05!2sAcad%C3%A9mie%20des%20Beaux-Arts!5e1!3m2!1sfr!2scd!4v1772016605926!5m2!1sfr!2scd" width="200" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3294.649864755623!2d15.27908563613891!3d-4.327186759260312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a6a31c3e94ec6a1%3A0xe4a7c4a1ed5a3a05!2sAcad%C3%A9mie%20des%20Beaux-Arts!5e1!3m2!1sfr!2scd!4v1772016605926!5m2!1sfr!2scd" width="200" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3294.649864755623!2d15.27908563613891!3d-4.327186759260312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a6a31c3e94ec6a1%3A0xe4a7c4a1ed5a3a05!2sAcad%C3%A9mie%20des%20Beaux-Arts!5e1!3m2!1sfr!2scd!4v1772016605926!5m2!1sfr!2scd" width="200" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+  </section>
+
+  </div>
+  
+  <div class="strong" ><p><strong>©</strong>Galaxie</p></div>
+</footer>
+<script src="galaxie.js"></script>
+</html>

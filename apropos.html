@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> <link rel="stylesheet" href="galaxie.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo"><img src="img/21.png" height="46" width="76"></div>
+      <form class="input1">
+          <div class="input1-search">
+           <input type="search" placeholder="Recherchez...">
+          </div>
+      </form>
+  <!-- Bouton menu -->
+<button class="open-btn" onclick="openMenu()">
+  ☰
+</button>
+
+<!-- Overlay -->
+<div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+<!-- Sidebar -->
+<div class="sidebar" id="sidebar">
+
+  <!-- Fermer -->
+  <div class="close-btn" onclick="closeMenu()">
+    ✕
+  </div>
+
+  <!-- Logo -->
+  <h2 class="logo"><strong>©</strong>Galaxie</h2>
+
+  <!-- Recherche -->
+  <input type="text" placeholder="Recherche">
+
+  <!-- Menu -->
+  <ul>
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="services.html">Nos Sérvices</a></li>
+    <li><a href="offres.html">Offres</a></li>
+    <li><a href="apropos.html">A propos</a></li>
+    <li><a href="Actualité.html">Nos Spécialités..</a></li>
+  </ul>
+
+  <!-- Bouton -->
+  <button class="cta-btn">
+    S'abonner
+  </button>
+
+</div>
+</header>
+
+    <section class="gal2">
+        <div>
+          <h1>Galaxie'</h1>
+          <h3><span>A</span>-Propos..</h3>
+        </div>
+    </section>
+            <form class="input">
+        <div class="input-search">
+          <input type="search" placeholder="Recherchez">
+        </div>
+      </form>
+
+<!--APROPOS-->
+<section class="about">
+  <h2><a id="">QUI SOMMES-NOUS ?</a></h2>
+  <div class="abouts">
+    <div><strong>°</strong><span>NOUS SOMMES</span></div>
+    <div><strong>°</strong><span>DEPUIS</span></div>
+    <div><strong>°</strong><span>PARCE QUE</span></div>
+    <div><strong>°</strong><span>POUR</span></div>
+
+  </div>
+  <div class="ab-btn">
+      <button>En savoir plus</button>
+
+  </div>
+</section>
+
+
+<!--POURQUOI NOUS CHOISIR-->
+<section class="reson">
+  <h2><a id="">Pourquoi nous Choisir ?</a></h2>
+  <div class="resons">
+    <div><strong>°</strong><span>PROXIMITE</span></div>
+    <div><strong>°</strong><span>RAPIDITE</span></div>
+    <div><strong>°</strong><span>CONFIANCE</span></div>
+    <div><strong>°</strong><span>NATUREL-BIO</span></div>
+
+  </div>
+</section>
+<!-- IMPACT -->
+<section class="impact">
+  <h2><a id="">Impacts</a></h2>
+  <div class="stats">
+    <div><strong>6.5K+</strong><span>Clients</span></div>
+    <div><strong>4+</strong><span>Communes</span></div>
+    <div><strong>5 ans</strong><span>Experience</span></div>
+
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <h2><a id="">" Témoignages</a></h2>
+  <div class="testimonial">
+    <h4>Commentaire :</h4>
+    <p>"Boissons à un bon prix..."</p>
+    <span>! Cliente satisfait</span>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+  <h2><a id="Contact">Contact</a></h2>
+  <form>
+    <div id="type">
+      <input type="text" placeholder="Nom" class="type"/>
+    <input type="email" placeholder="Email" class="type"/>
+    </div>
+    <textarea placeholder="Message"></textarea>
+    <button>Envoyer</button>
+  </form>
+  
+</section>
+
+</body>
+<script src="galaxie.js"></script>
+</html>
