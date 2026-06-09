@@ -66,7 +66,6 @@ body.dark {
   color: #333;
 }
 .navbar a:hover {
-  background-color: #0000002a;
 }
 
 /* cta button */
@@ -97,7 +96,7 @@ body.dark {
 .gal {
   margin-top: 60px;
   padding: 200px 40px;
-  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.4)), url("imaGe/1.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.4)), url("img/1.jpg");
   background-repeat: no-repeat;
   background-attachment: local,fixed;
   background-size: cover;
@@ -144,7 +143,7 @@ body.dark {
 .gal1 {
   margin-top: 60px;
   padding: 200px 40px;
-  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.4)), url("imaGe/35.jpeg");
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.4)), url("img/35.jpeg");
   background-repeat: no-repeat;
   background-attachment: local,fixed;
   background-size: cover;
@@ -167,7 +166,7 @@ body.dark {
 .gal2 {
   margin-top: 60px;
   padding: 200px 40px;
-  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.4)), url("imaGe/40.jpeg");
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.4)), url("img/40.jpeg");
   background-repeat: no-repeat;
   background-attachment: local,fixed;
   background-size: cover;
@@ -233,7 +232,7 @@ body.dark {
   border-color: orange;
   border-radius: 10px;
   background-color: orange;
-  color: #fff;
+  color: orange;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.089);
   transition: 0.3s;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.144);
@@ -244,9 +243,16 @@ body.dark {
 .men:hover {
   transform: translateY(-3px);
 }
-.men a {
-  color: #fff;
-  font-weight: 700;
+#men a {
+  color: orange;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 4px;
+  text-decoration: none;
+  transition: 0.6s;
+}
+#men a:hover {
+  text-decoration: underline;
   letter-spacing: 9px;
 }
 @media (max-width: 500px) {
@@ -340,17 +346,22 @@ body.dark {
   color: orange;
   margin-bottom: 20px;
 }
-
-/* Input */
-input {
-  width: 100%;
-  padding: 15px;
-  border: none;
-  border-radius: 30px;
-  margin-bottom: 30px;
-  transition: 0.3s;
+.logo1 img {
+  height: 56px; 
+  width: 206;
 }
 
+.centure {
+  width: 100%;
+  padding: 30px;
+  background: linear-gradient( white, rgba(226, 225, 223, 0.562));
+}
+.centure p {
+  text-align: center;
+  font-weight: bolder;
+  color: orange;
+  letter-spacing: 3px;
+}
 
 /* Menu */
 ul {
@@ -381,7 +392,7 @@ ul li {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.123);
 }
 .services {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.404),rgba(0, 0, 0, 0.418)),url("imaGe/12.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.404),rgba(0, 0, 0, 0.418)),url("img/22.jpg");
   background-repeat: no-repeat;
   background-attachment: local,fixed;
   background-size: cover;
@@ -392,39 +403,40 @@ ul li {
     color: white;
 }
 .input {
-    border: 1px solid;
-  border-color: white;
-  background-color: #fff;
-  position: relative;
-  left: 0;
-  right: 0;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  height: 80px;
-  width: 100%;
+  margin-top: -150px;
+  margin-bottom: -150px;
+  align-self: flex-start;
   padding: 0px 16px;
-  box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.027);
   z-index: 900;
+  transition: 0.3s;
+
+}
+.input:hover {
+  transform: translatey(-6px);
 }
 
   
 .input-search input,
 .input-search select {
-  margin-top: 30px;
-  padding: 14px 56px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
+  height: 50px;
+  width: 150px;
+  border: 1px solid;
+  border-color: white;
+  border-radius: 20px;
   font-size: 15px;
   outline: none;
+  background-color: white;
+  box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.582);
+  padding-left: 4px;
   transition: 0.3s;
 }
 
+
 .input-search input:focus,
 .input-search select:focus {
-  border-color: orange;
-  box-shadow: 0 0 5px rgba(0,86,179,0.3);
+  border-color: rgb(224, 223, 219);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.801);
 }
 
 /* RECHERCHE SUR BANDE */
@@ -589,7 +601,7 @@ ul li {
   margin-top: 15px;
   font-size: 18px;
   font-weight: bold;
-  color: orange;
+  color: rgb(143, 93, 2);
 }
 
 
@@ -627,6 +639,11 @@ ul li {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   transition: 0.3s;
 }
+.carte:hover {
+  background-color: #202020;
+  color: white;
+}
+
 @media (max-width:1211px){
   .carte {
     width: 500px;
@@ -691,7 +708,7 @@ ul li {
   margin-top: 15px;
   font-size: 18px;
   font-weight: bold;
-  color: orange;
+  color: rgb(143, 93, 2);
 }
 
 
@@ -754,7 +771,12 @@ ul li {
 /* EFFET-P */
 .card-p:hover {
   transform: translateY(-8px);
+  background-color: #202020;
+  color: white;
+
 }
+
+
 /* IMAGE-P */
 .card-p img {
   width: 100%;
@@ -765,6 +787,10 @@ ul li {
 /* PARTIE-P TEXTE */
 .carp-content {
   padding: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 /* TITRE-P */
 .carp-content h3 {
@@ -810,7 +836,7 @@ ul li {
   justify-content: space-between;
   align-items: center;
   gap: 150px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.705),rgba(0, 0, 0, 0.712)),url("imaGe/76.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.705),rgba(0, 0, 0, 0.712)),url("img/118\ \(1\).avif");
   background-repeat: no-repeat;
   background-attachment: local,fixed;
   background-size: cover;
@@ -927,68 +953,84 @@ ul li {
   font-size: 20px;
 }
 
-/* BOUTONS DE MENU */
+/* BOITES-LIENS */
+.boite-l{
+    margin-top: 80px;
+    width: 100%;
+    height: 130px;
+    position: relative;
+    left: 0;
+    right: 0;
+    display: flex;
+    
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #ffffff00;
 
-.btm {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  width: 100%;
-  position: relative;
-  background-color: rgb(32, 31, 31);
-  margin-top: 85px;
-  gap: 20px;
-  padding: 20px;
-  inset: 0;
+    overflow-y: auto;
 }
-.btm a {
+
+
+
+.liens {
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.3s;
+}
+.liens a {
+  width: 200px;
   text-decoration: none;
   color: white;
   padding: 5px 10px;
   border: 1px solid;
-  border-color: #db8625;
+  border-color: white;
   border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: 0.5s;
+
 }
-.btm a:hover {
+.liens a:hover {
   text-decoration: underline;
 }
-.b {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: row;
-  gap: 50px;
-}
-
-
-
-@media (max-width:500px) {
-  .btm {
-    margin-top: 85px;
-    padding: 20px;
-    font-size: 7px;
+@media (max-width:500px){
+  .boite-l{
     width: 100%;
+    height: 100px;
+    position: relative;
+    left: 0;
+    right: 0;
   }
-  .b {
+
+  .liens {
+    margin-left: 20px;
+    margin-right: 20px;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    gap: 10px;
+    flex-direction: row;
     justify-content: space-around;
-    gap: 15;
+    transition: 0.3s;
 
   }
-  .b a {
-    margin: -20px;
+  .liens a {
+  width: 100px;
+  height: 40px;
   }
-
 }
 
 /* POURQUOI NOUS CHOISIR */
 .reson {
   padding: 100px;
   text-align: center;
-  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.4)),url("imaGe/13\ \(2\).jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.4)),url("img/13\ \(2\).jpg");
   background-repeat: no-repeat;
   background-attachment: local,fixed;
   background-size: cover;
@@ -1039,7 +1081,7 @@ ul li {
 .deliver {
   padding: 100px;
   text-align: center;
-  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.4)),url("imaGe/31.jpeg");
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.4)),url("img/31.jpeg");
   background-repeat: no-repeat;
   background-attachment: local,fixed;
   background-size: cover;
@@ -1112,7 +1154,7 @@ ul li {
 .about {
   padding: 100px;
   text-align: center;
-  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.4)),url("imaGe/34.jpeg");
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.4)),url("img/34.jpeg");
   background-repeat: no-repeat;
   background-attachment: local,fixed;
   background-size: cover;
@@ -1186,7 +1228,7 @@ ul li {
 .impact {
   padding: 100px;
   text-align: center;
-  background-image: url("imaGe/13\ \(3\).jpg");
+  background-image: url("img/13\ \(3\).jpg");
   object-fit: cover;
   background-repeat: no-repeat;
   background-attachment: local,fixed;
@@ -1215,7 +1257,7 @@ ul li {
 .stats {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-  gap: 20px;.
+  gap: 20px;
 }
 .stats div {
   background-color: #29292973;
@@ -1264,7 +1306,7 @@ ul li {
 .testimonials {
   padding: 100px;
   
-  background-image: url("imaGe/20.avif");
+  background-image: url("img/20.avif");
   background-repeat: no-repeat;
   background-attachment: local,fixed;
   background-size: cover;
@@ -1302,7 +1344,7 @@ ul li {
 /* PATISSERIE */
 .patisseries {
   padding: 100px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.404),rgba(0, 0, 0, 0.418)),url("imaGe/19.avif");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.404),rgba(0, 0, 0, 0.418)),url("img/19.avif");
   background-repeat: no-repeat;
   background-attachment: local,fixed;
   background-size: cover;
@@ -1353,7 +1395,7 @@ ul li {
 .traiteur {
   padding: 100px;
   text-align: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.404),rgba(0, 0, 0, 0.418)),url("imaGe/37.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.404),rgba(0, 0, 0, 0.418)),url("img/37.jpeg");
   object-fit: cover;
   background-repeat: no-repeat;
   background-attachment: local,fixed;
@@ -1414,7 +1456,7 @@ ul li {
 /* CONTACT */
 .contact {
   padding: 60px;
-  background-image: url("imaGe/5\ \(1\).avif");
+  background-image: url("img/5\ \(1\).avif");
   background-repeat: no-repeat;
   background-attachment: local,fixed;
   background-size: cover;
@@ -1634,8 +1676,6 @@ footer {
 
 }
 
-.strong {
-}
 .strong p {
   text-align: center;
   margin-bottom: 2px;
@@ -1685,7 +1725,7 @@ footer {
     height: 80px;
   }
 
-.iframe {
+  .iframe {
     margin-top: 20px;
     margin-bottom: 20px;
     display: flex;
@@ -1694,7 +1734,7 @@ footer {
     justify-content: space-around;
     transition: 0.3s;
   }
-.iframe iframe {
+  .iframe iframe {
   width: 130px;
   height: 60px;
   }
